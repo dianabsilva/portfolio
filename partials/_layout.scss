@@ -1056,6 +1056,11 @@ a, button{
 
         .social-nav{
             justify-content: center;
+
+            h3, ul {
+                display: none;
+            }
         }
+
     }
 }

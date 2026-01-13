@@ -1154,6 +1154,9 @@ a, button {
   .social .social-container .social-nav {
     justify-content: center;
   }
+  .social .social-container .social-nav h3, .social .social-container .social-nav ul {
+    display: none;
+  }
 }
 body {
   font-family: "Inter", sans-serif;
