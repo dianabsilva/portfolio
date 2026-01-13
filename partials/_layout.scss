@@ -257,8 +257,8 @@ a, button{
         text-align: center;
 
         img {
-            width: 80%;
-            height: 80%;
+            width: 60%;
+            height: 60%;
         }
 
         .about-content {
@@ -272,6 +272,7 @@ a, button{
 
             p{
                 max-width: 200px;
+                text-align: justify;
             }
         }
     }
@@ -288,6 +289,7 @@ a, button{
 
     .about-content p {
         font-size: 12px;
+        text-align: justify;
     }
 }
 
@@ -1056,6 +1058,10 @@ a, button{
 
         .social-nav{
             justify-content: center;
+
+            p, .button-footer{
+                align-items: center;
+            }
 
             h3, ul {
                 display: none;

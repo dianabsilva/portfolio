@@ -435,8 +435,8 @@ a, button {
     text-align: center;
   }
   .about img {
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
   }
   .about .about-content h1 {
     font-size: 20px;
@@ -446,6 +446,7 @@ a, button {
   }
   .about .about-content p {
     max-width: 200px;
+    text-align: justify;
   }
 }
 @media (max-width: 480px) {
@@ -457,6 +458,7 @@ a, button {
   }
   .about-content p {
     font-size: 12px;
+    text-align: justify;
   }
 }
 .education h1 {
@@ -1153,6 +1155,9 @@ a, button {
   }
   .social .social-container .social-nav {
     justify-content: center;
+  }
+  .social .social-container .social-nav p, .social .social-container .social-nav .button-footer {
+    align-items: center;
   }
   .social .social-container .social-nav h3, .social .social-container .social-nav ul {
     display: none;
