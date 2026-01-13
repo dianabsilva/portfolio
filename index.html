@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="assets/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="cursor.js" defer></script>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Inter:opsz,wght@14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RE1BEZFYPS"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RE1BEZFYPS');
+        </script>
+
+        <title>Diana Amaral | Desenvolvedora Front-End (Portfólio)</title>
+        <meta name="description" content="Desenvolvedora Front-End especializada em criar interfaces modernas e responsivas com HTML, CSS e JavaScript." />
+    </head>
+
+<body>
+<!--BACKGROUND LAYER-->
+<div class="background-layer"></div>
+<!--CUSTOM CURSOR-->
+<div class="custom-cursor">
+  <div class="cursor-default">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+      <path
+        fill="#E0A100"
+        stroke="#FFFFFF"
+        stroke-width="1"
+        d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"
+      />
+    </svg>
+  </div>
+
+  <div class="cursor-link">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+      <path
+        fill="#E0A100"
+        stroke="#FFFFFF"
+        stroke-width="1"
+        stroke-linejoin="round"
+        d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"
+      />
+    </svg>
+  </div>
+</div>
+
+<!--HEADER-->
+<header class="header">
+  <nav class="navbar">
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#about">Sobre Mim</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#social">Social</a></li>
+    </ul>
+
+    <a href="https://api.whatsapp.com/send?phone=5581987509044&text=Olá%21+Gostaria+de+contratar+seus+serviços" class="cta-btn">
+       FAÇA SEU PEDIDO
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+<!--ABOUT-->
+<div id="about"></div> 
+<section class="about" id="about">
+  <div class="about-content" data-aos="fade-up" data-aos-duration="3000">
+    <h1>Olá 👋 Me chamo</h1>
+    <h2>Diana Amaral</h2>
+    <p>Desenvolvedora front-end apaixonada por criar interfaces <b>modernas</b> e <b>responsivas</b>, onde transformo ideias em realidade através do código.</p>
+      
+    <img 
+      data-aos="zoom-in-up" 
+      data-aos-duration="1000"
+      src="assets/diana-amaral-dev.png" 
+      alt="Foto de Diana Amaral"/>
+
+    <a href="https://api.whatsapp.com/send?phone=5581987509044&text=Olá%21+Gostaria+de+contratar+seus+serviços" class="button-contact" target="_blank">
+                    Entre em contato</a>
+
+  </div>
+
+  <div class="education" data-aos="fade-up" data-aos-delay="300">
+    <h1>Ferramentas e Tecnologias ——— 🖥️</h1>
+    <p><b>Do código ao conteúdo:</b> conecto o desenvolvimento web, design estratégico e inteligência em mídias sociais para dar vida às suas ideias.</p>
+  </div>
+
+  <div class="carrossel" data-aos="zoom-in" data-aos-delay="600">
+    <div class="grupo">
+      <div class="card">
+        <img src="assets/logos/canva.svg" alt="CANVA"/>
+        <p>Canva</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/capcut.svg" alt="CAPCUT"/>
+        <p>CapCut</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/git.svg" alt="GIT"/>
+        <p>Git</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/github.svg" alt="GITHUB"/>
+        <p>GitHub</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/html.svg" alt="HTML5"/>
+        <p>HTML5</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/css.svg" alt="CSS3"/>
+        <p>CSS3</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/sass.svg" alt="SASS"/>
+        <p>SASS</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/js.svg" alt="JAVASCRIPT"/>
+        <p>JavaScript</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/meta.svg" alt="META"/>
+        <p>Meta Ads</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/photoshop.svg" alt="PHOTOSHOP"/>
+        <p>Photoshop</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/seo.svg" alt="SEO"/>
+        <p>SEO</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/ui-ux.png" alt="UI/UX"/>
+        <p>UI/UX</p>
+      </div>
+    </div>
+    <div aria-hidden class="grupo">
+      <div class="card">
+        <img src="assets/logos/canva.svg" alt="CANVA"/>
+        <p>Canva</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/capcut.svg" alt="CAPCUT"/>
+        <p>CapCut</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/git.svg" alt="GIT"/>
+        <p>Git</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/github.svg" alt="GITHUB"/>
+        <p>GitHub</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/html.svg" alt="HTML5"/>
+        <p>HTML5</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/css.svg" alt="CSS3"/>
+        <p>CSS3</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/sass.svg" alt="SASS"/>
+        <p>SASS</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/js.svg" alt="JAVASCRIPT"/>
+        <p>JavaScript</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/meta.svg" alt="META"/>
+        <p>Meta Ads</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/photoshop.svg" alt="PHOTOSHOP"/>
+        <p>Photoshop</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/seo.svg" alt="SEO"/>
+        <p>SEO</p>
+      </div>
+      <div class="card">
+        <img src="assets/logos/ui-ux.png" alt="UI/UX"/>
+        <p>UI/UX</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!--SERVICES-->
+<section class="services" id="services">
+  <div class="services-content" data-aos="fade-up" data-aos-duration="3000">
+    <h1>Serviços Oferecidos ——— 🛠️</h1>
+    <p>Formas como posso ajudar o seu negócio a <b>crescer</b>.</p>
+  </div>
+      <div class="services-cards" data-aos="zoom-in" data-aos-delay="600">
+        <div class="service-card">
+          <h2>Desenvolvimento Web</h2>
+          <p>Criação de sites responsivos e modernos utilizando <i>HTML</i>, <i>CSS</i> e <i>JavaScript</i> para garantir uma experiência de usuário <b>excepcional</b>.</p>
+        </div>
+        <div class="service-card">
+      <h2>Design de Interface</h2>
+      <p>Desenvolvimento de interfaces <i>intuitivas</i> e <i>atraentes</i> que alinham estética e funcionalidade, proporcionando uma <b>navegação fluida</b>.</p>
+        </div>
+        <div class="service-card">
+      <h2>Otimização SEO</h2>
+      <p>Implementação de práticas de SEO para melhorar a visibilidade do seu site nos motores de busca, atraindo mais <b>tráfego qualificado</b>.</p>
+        </div>
+        <div class="service-card">
+      <h2>Gestão de Mídias Sociais</h2>
+      <p>Criação e gerenciamento de conteúdo para redes sociais, <b>aumentando o engajamento</b> e <b>fortalecendo</b> a presença online da sua marca.</p>
+        </div>
+        <div class="service-card">
+      <h2>Criação de Identidade Visual</h2>
+      <p>Desenvolvimento de <b>identidade visual</b> e <b>estratégias de marca</b> que comunicam a essência da sua empresa e diferenciam-na da concorrência.</p>
+        </div>
+        <div class="service-card">
+      <h2>Tráfego Pago</h2>
+      <p>Campanhas de anúncios pagos em redes sociais e motores de busca para o <b>alcance</b> e o <b>engajamento</b> do seu negócio.</p>
+        </div>
+      </div>
+<p>Não encontrou exatamente o que procura? Entre em contato comigo pelo <a href="https://api.whatsapp.com/send?phone=5581987509044&text=Olá%21+Gostaria+de+contratar+seus+serviços"><i>WhatsApp</i></a> e podemos criar um projeto sob medida para você.</p>
+</section>
+
+<!--PROJECTS-->
+<section class="projects" id="projects">
+  <div class="projects-content" data-aos="fade-up" data-aos-duration="3000">
+    <h1>Projetos Realizados ——— 📂</h1>
+    <p>Uma seleção dos meus trabalhos mais recentes em desenvolvimento web e design.</p>
+  </div>
+  <div class="projects-cards" data-aos="zoom-in" data-aos-delay="600">
+    <div class="projects-card" data-aos="fade-up" data-aos-duration="1000">
+      <div class="projects-info">
+        <h2>Site Médico</h2>
+          <p><br>Criação de site médico focado em <b>User Experience (UX)</b> e performance. 
+            Implementei uma arquitetura de informação clara, onde cada serviço possui 
+            uma landing page específica para detalhamento técnico, elevando o <b>SEO</b> e a 
+            clareza para o paciente. O design utiliza uma paleta cromática harmoniosa, 
+            alinhada ao branding da profissional, garantindo uma presença digital sólida, 
+            segura e adaptável a qualquer dispositivo.</p>
+
+            <div class="projects-actions">
+              <a href="https://clinicajanainaseabra.com.br/" target="_blank" class="button-project">Confira</a>
+              <a href="https://github.com/dianabsilva/DERMATO-SITE" target="_blank" class="button-project">Código no Github</a>
+            </div>
+
+            <div class="projects-tags">
+              <h3>HTML</h3> <h3>SCSS</h3> <h3>JAVASCRIPT</h3> <h3>SEO</h3> <h3>UI/UX</h3>
+            </div>
+      </div>
+      <div class="projects-image">
+        <img src="assets/projetos/site-dermato.png" alt="Projeto 1"/>
+      </div>
+    </div>
+    <div class="projects-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <div class="projects-info">
+        <h2>Gestão de Rede social</h2>
+          <p><br>Solução completa em Social Media para o nicho de saúde. 
+            Conteúdo visual de alto impacto, utilizando técnicas avançadas de 
+            edição de imagem e vídeo <i>(Reels/Shorts)</i>. O trabalho une 
+            estética premium com inteligência de dados, utilizando o 
+            tráfego pago para escalar o alcance regional, garantindo 
+            que a marca alcance o público certo na região e converta 
+            engajamento em consultas reais.</p>
+            
+            <div class="projects-actions">
+              <a href="https://www.instagram.com/clinicajanainaseabra/" target="_blank" class="button-project">Confira</a>
+            </div>
+      
+            <div class="projects-tags">
+              <h3>PHOTOSHOP</h3> <h3>CANVAS</h3> <h3>CAPCUT</h3> <h3>TRAFÉGO PAGO</h3>
+            </div>
+          </div>
+      <div class="projects-image">
+        <img src="assets/projetos/insta.png" alt="Projeto 2"/>
+      </div>
+    </div>
+    <div class="projects-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <div class="projects-info">
+        <h2>Portfólio de Desenvolvedor</h2>
+          <p><br>Landing Page de apresentação profissional. O projeto apresenta uma interface dinâmica 
+            e totalmente responsiva, projetada para oferecer uma navegação intuitiva 
+            tanto em desktop quanto em dispositivos móveis. O site centraliza meu 
+            portfólio de <b>Desenvolvimento Web</b> e <b>Social Media</b>, demonstrando a convergência 
+            entre código limpo, design focado em UX e estratégias de crescimento digital.</p>
+            
+            <div class="projects-actions">
+              <a href="#" target="_blank" class="button-project">Confira</a>
+              <a href="https://github.com/dianabsilva/portfolio" target="_blank" class="button-project">Código no Github</a>
+            </div>
+    
+            <div class="projects-tags">
+              <h3>HTML</h3> <h3>SCSS</h3> <h3>JAVASCRIPT</h3> <h3>SEO</h3> <h3>UI/UX</h3>
+            </div>
+          </div>
+    <div class="projects-image">
+      <img src="assets/projetos/portfolio.png" alt="Projeto 3"/>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!--FAQ-->
+<section class="faq" id="faq">
+  <div class="faq-content" data-aos="fade-up" data-aos-duration="3000">
+    <h1>Perguntas Frequentes (FAQ) ——— 📢</h1>
+    <p>Tudo o que você precisa saber sobre o meu fluxo de trabalho. Caso sua dúvida não esteja aqui, sinta-se à vontade para entrar em contato.</p>
+  </div>
+  <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+        <details class="faq-item">
+            <summary>Qual é a duração de um projeto? <span class="icon">+</span></summary>
+            <div class="faq-answer">
+                <p>O prazo varia conforme a complexidade e demanda atual. Landing Pages costumam ser entregues em <b>7 a 15 dias</b>. Projetos mais robustos ou gestão mensal de redes sociais seguem um cronograma personalizado definido na reunião de briefing.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Quais os preços? <span class="icon">+</span></summary>
+            <div class="faq-answer">
+                <p>Cada projeto é único. Trabalho com orçamentos personalizados baseados no escopo, funcionalidades e objetivos da sua marca. <i>Entre em contato para solicitar uma proposta sob medida.</i></p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Meu site aparecerá na primeira página do Google? <span class="icon">+</span></summary>
+            <div class="faq-answer">
+                <p>O <b>SEO (Otimização para Motores de Busca)</b> é um trabalho de médio a longo prazo. Eu aplico as melhores práticas de <i>SEO On-Page</i>, velocidade e estrutura técnica para que o Google entenda que seu site é relevante, facilitando o ranqueamento orgânico ao longo do tempo.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Qual a diferença entre Tráfego Pago e Orgânico? <span class="icon">+</span></summary>
+            <div class="faq-answer">
+                <p>No <b>Tráfego Pago (Ads)</b>, você investe um valor para aparecer imediatamente para o público certo. No <b>Orgânico</b>, o crescimento vem através da relevância do conteúdo e autoridade do site. O ideal para uma estratégia de sucesso é o equilíbrio entre os dois.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Quanto devo investir em anúncios por mês? <span class="icon">+</span></summary>
+            <div class="faq-answer">
+                <p>Não existe um valor fixo, mas recomendo começar com um orçamento que permita testes de audiência. O foco inicial é encontrar o <b>melhor ROI (Retorno sobre Investimento)</b>, ajustando as campanhas conforme os dados de conversão aparecem.</p>
+            </div>
+        </details>
+    </div>
+</section>
+
+<!--SOCIAL-->
+<section class="social" id="social">
+    <div class="social-container container" data-aos="fade-up">
+        
+        <div class="social-brand">
+            <img src="assets/cat-dev.gif" alt="Logo" class="footer-logo"/>
+            <p>Conecte-se comigo:</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/dianas.js/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5581987509044&text=Olá%21+Gostaria+de+contratar+seus+serviços" target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://github.com/dianabsilva/" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="social-nav">
+            <h3>Navegue</h3>
+            <ul>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <p>Atendimento exclusivo via WhatsApp.</p>
+            <a href="https://api.whatsapp.com/send?phone=5581987509044&text=Olá%21+Gostaria+de+contratar+seus+serviços" class="button-footer">Entre em contato</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Diana Amaral © 2026. Todos os Direitos Reservados.</p>
+    </footer>
+</section>
+</main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

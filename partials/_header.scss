@@ -1,0 +1,224 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+.navbar {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1000; 
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 0px rgba(255, 255, 255, 0.08);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  align-items: center;
+  letter-spacing: 1px;
+
+  a {
+    position: relative;
+    color: #d6d9e0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.8;
+    white-space: nowrap;
+    padding: 10px 16px;
+    display: inline-block;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.1s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 2px;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      transform: translateX(-50%);
+      transition: width 0.25s ease;
+    }
+
+    &:hover {
+      opacity: 1;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+
+      &::after {
+        width: 15px;
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+}
+
+.cta-btn {
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: $white-dark;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(120deg, $pink-dark, $rose-dark, $yellow-normal);
+  background-size: 400% 400%;
+  text-decoration: none;
+  animation: gradient-move 6s linear infinite;
+  transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes gradient-move {
+    0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cta-btn:hover{
+  transform: translateY(-2px);
+  animation-duration: 3s;
+}
+
+@keyframes scaleButton{        
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.07);
+        }
+}
+
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition:
+      transform 0.35s cubic-bezier(.4,0,.2,1),
+      opacity 0.25s ease;
+    opacity: 0.9;
+
+    &:nth-child(1) { top: 0; }
+    &:nth-child(2) { top: 9px; }
+    &:nth-child(3) { bottom: 0; }
+  }
+
+  &.active {
+    span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    width: fit-content;   // NÃO MUDE ISSO
+    max-width: 95vw;
+    padding: 10px 14px;
+    gap: 16px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) translateY(8px) scale(0.96);
+
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    width: max-content;
+
+    border-radius: 20px;
+    background: rgba(20, 20, 30, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.35s cubic-bezier(.4,0,.2,1);
+
+    &.open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0) scale(1);
+    }
+  }
+
+  .cta-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
