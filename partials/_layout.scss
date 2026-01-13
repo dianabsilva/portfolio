@@ -258,17 +258,32 @@ a, button{
 
         img {
             width: 80%;
+            height: 80%;
+        }
+
+        .about-content {
+            h1 {
+                font-size: 20px;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+
+            p{
+                max-width: 200px;
+            }
         }
     }
 }
 
 @media (max-width: 480px) {
     .about-content h1 {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .about-content h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .about-content p {
@@ -489,7 +504,7 @@ a, button{
 
 @media (max-width: 768px) {
     .service-card {
-        width: 100%; 
+        width: 70%; 
     }
 }
 
@@ -731,8 +746,8 @@ a, button{
     object-fit: contain;
   }
 
-  .projects-info p {
-    text-align: center;
+  .projects-info p, a {
+    text-align: justify;
   }
 }
 
@@ -1036,6 +1051,10 @@ a, button{
         align-items: center;
 
         .social-brand .social-links {
+            justify-content: center;
+        }
+
+        .social-nav{
             justify-content: center;
         }
     }
