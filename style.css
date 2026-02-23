@@ -1058,37 +1058,6 @@ a, button {
   color: #af5a6f;
   transform: translateY(-3px);
 }
-.social .social-nav {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
-.social .social-nav h3 {
-  font-size: 18px;
-  color: #f6f1d1;
-  margin-bottom: 12px;
-  font-family: "Red Hat Display", sans-serif;
-}
-.social .social-nav ul {
-  list-style: none;
-  padding: 0;
-}
-.social .social-nav ul li {
-  margin-bottom: 8px;
-}
-.social .social-nav ul li a {
-  color: #bebebe;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-.social .social-nav ul li a:hover {
-  color: #af5a6f;
-}
 
 .footer {
   width: 100%;
@@ -1110,12 +1079,6 @@ a, button {
   }
   .social .social-container .social-brand .social-links {
     justify-content: center;
-  }
-  .social .social-container .social-nav {
-    justify-content: center;
-  }
-  .social .social-container .social-nav h3, .social .social-container .social-nav ul {
-    display: none;
   }
 }
 body {
