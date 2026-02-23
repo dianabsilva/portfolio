@@ -15,7 +15,6 @@
 
 ## 📚 Seções do Projeto
 O site foi estruturado para apresentar minha autoridade e converter visitantes em clientes:
-- **Home:** Apresentação visual de alto impacto;
 - **Sobre Mim:** Minha trajetória unindo design e estratégia;
 - **Serviços:** Detalhamento das soluções em Tráfego, Social Media e Web;
 - **Projetos:** Galeria de trabalhos realizados com foco em conversão;
@@ -23,7 +22,7 @@ O site foi estruturado para apresentar minha autoridade e converter visitantes e
 
 ## 💼 Tecnologias & Ferramentas
 Para o desenvolvimento deste portfolio, utilizei:
-* **Frontend:** HTML5, Sass (SCSS) e JavaScript;
+* **Front-End:** HTML5, Sass (SCSS) e JavaScript;
 * **Estratégia:** Planejamento de Conteúdo;
 * **Design:** UI/UX focado em experiência do usuário e conversão.
 
