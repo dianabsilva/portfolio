@@ -442,13 +442,9 @@ a, button{
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 25px;
-    
-    // --- LARGURA PARA 3 POR LINHA ---
-    // Calculamos: (100% / 3) menos o espaço do gap
     width: calc(33.333% - 20px); 
-    min-width: 280px;         // Largura mínima para manter a leitura boa em telas menores
-    height: 220px;            // Altura fixa para manter a simetria (3 em cima, 3 embaixo)
-    
+    min-width: 280px;         
+    height: 220px;            
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,6 +503,15 @@ a, button{
 @media (max-width: 768px) {
     .service-card {
         width: 70%; 
+
+        h2 {
+            font-size: 10px;
+            border-radius: 800px;
+        }
+
+        p {
+            font-size: 10x;
+        }
     }
 }
 
@@ -979,59 +984,8 @@ a, button{
                 }
             }
         }
-
-        p {
-            font-size: 14px;
-            color: #a0a0a0;
-            margin-top: 20px;
-            margin-bottom: 5px;
-            line-height: 1.6;
-        }
     }
-
-    .button-footer {
-        display: inline-block;
-        font-size: 12px;
-        padding: 12px 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-weight: 600;
-        margin-bottom: 10px;
-        color: $white-dark;
-        border-radius: 12px;
-        background: linear-gradient(120deg, $purple-normal,$pink-light, $lilac-normal);
-        background-size: 400% 400%;
-        text-decoration: none;
-        animation: gradient-move 6s linear infinite;
-        transition: transform 0.25s cubic-bezier(.4,0,.2,1);
-    }
-
-    @keyframes gradient-move {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-    .button-footer:hover {
-           transform: translateY(-2px);
-            animation-duration: 3s;
-    }
-
-    @keyframes scaleButton{        
-        from{
-            transform: scale(1);
-        }
-        to{
-            transform: scale(1.07);
-        }
-    }
-    }
+}
 
 .footer {
         width: 100%;
@@ -1058,10 +1012,6 @@ a, button{
 
         .social-nav{
             justify-content: center;
-
-            p, .button-footer{
-                align-items: center;
-            }
 
             h3, ul {
                 display: none;

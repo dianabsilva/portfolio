@@ -590,8 +590,7 @@ a, button {
 
 .service-card {
   background: rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 25px;
   width: calc(33.333% - 20px);
@@ -650,6 +649,13 @@ a, button {
 @media (max-width: 768px) {
   .service-card {
     width: 70%;
+  }
+  .service-card h2 {
+    font-size: 10px;
+    border-radius: 800px;
+  }
+  .service-card p {
+    font-size: 10x;
   }
 }
 .projects {
@@ -762,8 +768,7 @@ a, button {
 
 .projects-card {
   background: rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 14px;
   padding: 0px 0 0px 40px;
   justify-content: space-between;
@@ -925,8 +930,7 @@ a, button {
 
 .faq-item {
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
@@ -1085,52 +1089,6 @@ a, button {
 .social .social-nav ul li a:hover {
   color: #af5a6f;
 }
-.social .social-nav p {
-  font-size: 14px;
-  color: #a0a0a0;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  line-height: 1.6;
-}
-.social .button-footer {
-  display: inline-block;
-  font-size: 12px;
-  padding: 12px 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #f6f1d1;
-  border-radius: 12px;
-  background: linear-gradient(120deg, #74446e, #DD7E8F, #8981D9);
-  background-size: 400% 400%;
-  text-decoration: none;
-  animation: gradient-move 6s linear infinite;
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-@keyframes gradient-move {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.social .button-footer:hover {
-  transform: translateY(-2px);
-  animation-duration: 3s;
-}
-@keyframes scaleButton {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.07);
-  }
-}
 
 .footer {
   width: 100%;
@@ -1155,9 +1113,6 @@ a, button {
   }
   .social .social-container .social-nav {
     justify-content: center;
-  }
-  .social .social-container .social-nav p, .social .social-container .social-nav .button-footer {
-    align-items: center;
   }
   .social .social-container .social-nav h3, .social .social-container .social-nav ul {
     display: none;
